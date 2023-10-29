@@ -1,0 +1,20 @@
+<div *ngIf="note" style="text-align: center;">
+    <h2>{{note.title}}</h2>
+    <table style="display: inline-block;">
+        <tr>
+            <td>Title:</td>
+            <td><input [(ngModel)]="note.title" placeholder="Title" /></td>
+        </tr>
+        <tr>
+            <td>Description:</td>
+            <td><input [(ngModel)]="note.description" placeholder="Description" /></td>
+        </tr>
+        <tr>
+            <td>Target time:</td>
+            <td><input [(ngModel)]="note.targetTime" placeholder="Target time" /></td>
+        </tr>
+        <button (click)="updateNote(note)" *ngIf="note.id">Save</button>
+        <button (click)="deleteNote(note)" *ngIf="note.id">Delete</button>
+        <button (click)="createNote(note)" *ngIf="!note.id">Create</button>
+        </table>
+</div>

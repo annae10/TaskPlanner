@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+
+td {
+  width: 200px;
+  height: 50px;
+  text-align: center;
+}
+
+.background_notes {
+  background-image: url(".\app\background.jpg");
+  background-color: transparent;
+}
+
+div {
+  width: 2000px;
+  height: 1000px;
+}
